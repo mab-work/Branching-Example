@@ -1,22 +1,32 @@
 git flow init -d
-git add command-line
 git commit -m "First commit for new project"
 git push -u -all origin
 
 // creating a new feature branch to fix Ref123
 git flow feature start Ref123
-git add command-line
 git commit -m "First commit for new feature branch"
 git flow feature publish Ref123
 
 // do work
-git add command-line
 git commit -m "Second commit for new feature branch"
 git push -u origin
 
 // Finish work
-git add command-line
 git commit -m "Third commit for new feature branch"
 git push -u origin
 git flow feature finish Ref123
+git push -u origin
+
+// create a new release candidate
+git flow release start 1.0.0
+git flow release publish 1.0.0
+
+// do release prep & final testing
+git commit -m "Final commit for release"
+git push -u origin
+git flow release finish 1.0.0
+git push -u origin 
+git push --tags
+
+
 
