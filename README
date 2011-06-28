@@ -42,3 +42,8 @@ git flow feature start Ref456
 git commit -m "First commit for new feature branch"
 git flow feature publish Ref456
 
+//do work
+git commit -m "Last commit for new feature branch"
+git flow feature finish Ref456
+git push -u --all --tags origin 
+git push -u --all origin 
