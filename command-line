@@ -8,3 +8,15 @@ git flow feature start Ref123
 git add command-line
 git commit -m "First commit for new feature branch"
 git flow feature publish Ref123
+
+// do work
+git add command-line
+git commit -m "Second commit for new feature branch"
+git push -u origin
+
+// Finish work
+git add command-line
+git commit -m "Third commit for new feature branch"
+git push -u origin
+git flow feature finish Ref123
+
