@@ -28,5 +28,12 @@ git flow release finish 1.0.0
 git push -u origin 
 git push --tags
 
-
+// do a hotfix
+git flow hotfix start 1.1.0
+git push -u --all origin
+//do work
+git commit -m "last commit for hotfix 1.1.0"
+git flow hotfix finish 1.1.0
+git push -u origin 
+git push --tags
 
